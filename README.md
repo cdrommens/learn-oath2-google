@@ -2,9 +2,10 @@
 Sample project for learning securing REST API with Google as IDP.
 
 ## Configure Google OAuth2
+> See [Guide](https://medium.com/geekculture/springboot-api-authentication-using-oauth2-with-google-655b8759f0ac)
 ### 1. Create New Project
 
-In your Google Cloud Console create new project:
+In your [Google Cloud Console](https://console.cloud.google.com/?project=learning-oath2) create new project:
 
 ![Scheme](markdown/images/create_google_project.gif)
 
@@ -64,3 +65,20 @@ for one of your test users. If the credentials are valid you should see somethin
 ![Scheme](markdown/images/postman_token.PNG)
 
 > Note: copy the value of **id_token** because we need it later
+
+*Result*
+```json
+{
+  "web": {
+    "client_id":"457099562219-n4qpce8uq8dinu0jtev8sv5egue5jgnh.apps.googleusercontent.com",
+    "project_id":"learning-oath2",
+    "auth_uri":"https://accounts.google.com/o/oauth2/auth",
+    "token_uri":"https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url":"https://www.googleapis.com/oauth2/v1/certs",
+    "client_secret":"*sencored*",
+    "redirect_uris": [
+      "https://www.getpostman.com/oauth2/callback"
+    ]
+  }
+}
+```
