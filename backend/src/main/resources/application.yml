@@ -1,0 +1,17 @@
+# https://developers.google.com/identity/openid-connect/openid-connect#discovery
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://accounts.google.com
+          jwk-set-uri: https://www.googleapis.com/oauth2/v3/certs
+          client-id: 457099562219-n4qpce8uq8dinu0jtev8sv5egue5jgnh.apps.googleusercontent.com
+
+
+logging:
+  level:
+    root: INFO
+    org:
+      springframework:
+        security: INFO
